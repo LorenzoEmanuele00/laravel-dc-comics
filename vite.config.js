@@ -13,6 +13,7 @@ export default defineConfig({
         alias: {
             '~resources':'/resources/',
             '~bootstrap':resolve(__dirname, 'node_modules/bootstrap'),
+            '~@fortawesom':resolve(__dirname, 'node_modules/@fortawesome')
         }
     }
 });
