@@ -2,6 +2,11 @@
 
 @section('content')
 <div>
+    @if (Session::has('message'))
+        <div class="alert alert-success w-50 mx-auto my-2">
+            {{ Session::get('message') }}
+        </div>
+    @endif
     <table class="table table-striped">
         <thead>
             <tr>
