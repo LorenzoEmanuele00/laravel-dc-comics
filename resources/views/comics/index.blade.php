@@ -20,12 +20,12 @@
                     <td>{{$comic->price}}</td>
                     <td>{{$comic->sale_date}}</td>
                     <td>
-                        <a class="btn btn-success" href="{{ route('comics.show', ['comic' => $comic->id]) }}">Detail</a>
-                        <a class="btn btn-warning" href="{{ route('comics.edit', ['comic' => $comic->id]) }}">Modify</a>
+                        <a class="btn btn-success" href="{{ route('comics.show', ['comic' => $comic->id]) }}"><i class="fa-solid fa-info"></i></a>
+                        <a class="btn btn-warning" href="{{ route('comics.edit', ['comic' => $comic->id]) }}"><i class="fa-solid fa-pencil"></i></a>
                         <form action="{{ route('comics.destroy', ['comic' => $comic->id]) }}"" class="d-inline-block" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button class="btn btn-danger" type="submit">Delete</button>
+                            <button class="btn btn-danger" type="submit"><i class="fa-regular fa-trash-can"></i></button>
                         </form>
                     </td>
                 </tr>
