@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <h2 class="text-center mt-3">welcome to my comic list backoffice</h2>
+<div class="text-center my-4">
+    <h1>DC-COMIC-LIST</h1>
+    <h3>Benevuto nella Home della sezione Amministrativa</h3>
+</div>
 @endsection
